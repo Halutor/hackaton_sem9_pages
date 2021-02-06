@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Cabecera de página -->
+        <header class="header">
+
+            <img src="https://image.flaticon.com/icons/png/512/1465/1465557.png" alt="" class="header__logo">
+
+            <nav class="header__menu">
+                <ul class="header__containerItems">
+
+                    <li class="header__item"><a href="x" class="header__link header--active">Home</a></li>
+                    <li class="header__item"><a href="x" class="header__link">Foro</a></li>
+                    <li class="header__item"><a href="x" class="header__link">Ingrese</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <section class="main__portada">
+
+                <h1 class="main__content">Código en JS del reto 02 </h1>
+                <h1 class="main__content">(Dar Click en cada Pregunta)</h1>
+                <p class="main__content">a continuación mediante sencillos algoritmos se mostrará la solución del reto
+                    02.
+                </p>
+
+            </section>
+
+        </main>
+
+
+        <section class="section">
+            <ol class="section__containerItems">
+
+                <li class="section__item">
+                    <p class="section__title"><a href="./question01.html" target="_blank"> Implementar un algoritmo que
+                            reciba 2 argumentos y los sume,
+                            el resultado
+                            se
+                            deberá imprimir en pantalla</a></p>
+                    <p class="section__parrafo">
+                        var numero01= parseInt(prompt('Ingrese primer número')); <br>
+                        var numero02= parseInt(prompt('Ingrese segundo número'));<br>
+
+                        console.log(`La suma es: ${suma2(numero01, numero02)}`);<br>
+
+                        //Función Suma de 2 números<br>
+                        function suma2(num1, num2) {<br>
+                        sumaFinal = num1 + num2;<br>
+                        return sumaFinal;<br>
+                        }
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question02.html" target="_blank">Un estudiante realiza 4
+                            exámenes, calcular el promedio de estos</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 02 <br>
+                        var numero01= parseInt(prompt('Ingrese primera nota')); <br>
+                        var numero02= parseInt(prompt('Ingrese segunda nota')); <br>
+                        var numero03= parseInt(prompt('Ingrese tercera nota')); <br>
+                        var numero04= parseInt(prompt('Ingrese cuarta nota')); <br>
+
+                        console.log(`El promedio es: ${promedio4(numero01, numero02, numero03, numero04)}`); <br>
+
+                        //Promedio <br>
+                        function promedio4(num1, num2, num3, num4) { <br>
+                        promFinal = (num1 + num2 + num3 + num4) / 4; <br>
+                        return promFinal; <br>
+                        } <br>
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question03.html" target="_blank">Calcular el área de un
+                            rectángulo</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 03 <br>
+                        var base= parseInt(prompt('Ingrese Altura')); <br>
+                        var altura= parseInt(prompt('Ingrese Base')); <br>
+
+
+                        console.log(`El área del rectangulo es: ${areaRectangulo(base, altura)}`); <br>
+
+                        //Área del rectangulo <br>
+                        function areaRectangulo(num1, num2) { <br>
+                        area = num1 * num2; <br>
+                        return area; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question04.html" target="_blank">Calcular el área de un
+                            triángulo</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 04 <br>
+                        var base= parseInt(prompt('Ingrese Altura')); <br>
+                        var altura= parseInt(prompt('Ingrese Base')); <br>
+
+
+                        console.log(`El área del triangulo es: ${areaTriangulo(base, altura)}`); <br>
+
+                        //Área del triangulo <br>
+                        function areaTriangulo(num1, num2) { <br>
+                        area = (num1 * num2) / 2; <br>
+                        return area; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question05.html" target="_blank">Calcular el área de una
+                            circunferencia</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 05 <br>
+                        var radio= parseInt(prompt('Ingrese el radio')); <br>
+
+                        console.log(`El área de la Circunferencia es: ${areaCircunferencia(radio)}`); <br>
+
+                        //Área de Circunferencia <br>
+                        function areaCircunferencia(num1) { <br>
+                        area = num1 * 3.1415; <br>
+                        return area; <br>
+                        } <br>
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question06.html" target="_blank">Determinar el sueldo semanal
+                            de un trabajador basándose en sus horas
+                            trabajadas y su salario de hora hombre </a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 06 <br>
+                        var numero01= parseInt(prompt('Ingrese horas trabajadas')); <br>
+                        var numero02= parseInt(prompt('Ingrese pago por hora')); <br>
+
+
+                        console.log(`El pago semanal que le corresponde es: ${pagoSemanal(numero01, numero02)} Soles`);
+                        <br>
+
+                        //Calculo de sueldo <br>
+                        function pagoSemanal(num1, num2) { <br>
+                        pago = num1 * num2; <br>
+                        return pago; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question07.html" target="_blank">Una modista, para realizar sus
+                            prendas de vestir, encarga las telas al
+                            extranjero.
+                            Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas,
+                            pero ella generalmente las tiene en metros. Realice un algoritmo para ayudar a
+                            resolver el problema, determinando cuantas pulgadas debe pedir con base en
+                            los metros que requiere. Represéntelo mediante el diagrama de flujo y el
+                            pseudocódigo (1 pulgada = 0.0254 m).</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 07 <br>
+                        var metros= parseInt(prompt('Ingrese metros a convertir')); <br>
+
+                        console.log(`Pedir: ${convMetrotoPulgada(metros)} pulgadas`); <br>
+
+                        //Conversión de metro a pulgada <br>
+                        function convMetrotoPulgada(num1) { <br>
+                        convertir = num1 * 0.0254; <br>
+                        return convertir; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question08.html" target="_blank">Una empresa importadora desea
+                            determinar cuántos dólares puede adquirir
+                            con equis cantidad de dinero peruano</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 08 <br>
+                        var soles= parseInt(prompt('Ingrese soles')); <br>
+
+                        console.log(`Cuesta: ${convDolarToSoles(soles)} dólares`); <br>
+
+                        //Conversión de metro a pulgada <br>
+                        function convDolarToSoles(num1) { <br>
+                        convertir = (num1 / 3.65).toFixed(2); <br>
+                        return convertir; <br>
+                        } <br>
+
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"> <a href="./question09.html" target="_blank">Una empresa que contrata
+                            personal requiere determinar la edad de las
+                            personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se
+                            les pregunta el año en que nacieron</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 09 <br>
+                        var anoNac= parseInt(prompt('Introducir año de nacimiento')); <br>
+                        var anoActual=2021; <br>
+
+                        console.log(`Tienes: ${obtieneEdad(anoNac, anoActual)} años`); <br>
+
+                        //Obtiene edad <br>
+                        function obtieneEdad(num1, num2) { <br>
+                        edad = num2 - num1; <br>
+                        return edad; <br>
+                        } <br>
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question10.html" target="_blank">Se tiene el nombre y la edad
+                            de tres personas. Se desea saber el nombre y
+                            la
+                            edad de la persona de menor edad</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 10 <br>
+                        var nombre1= prompt('Ingrese nombre'); <br>
+                        var edad01= parseInt(prompt('Introducir edad')); <br>
+
+                        var nombre2= prompt('Ingrese nombre'); <br>
+                        var edad02= parseInt(prompt('Introducir edad')); <br>
+
+                        var nombre3= prompt('Ingrese nombre'); <br>
+                        var edad03= parseInt(prompt('Introducir edad')); <br>
+
+
+                        console.log(`Nombre: ${nombre1} ${edad01} años`); <br>
+                        console.log(`Nombre: ${nombre2} ${edad02} años`); <br>
+                        console.log(`Nombre: ${nombre3} ${edad03} años`); <br>
+
+
+                        obtieneMenor(edad01, edad02, edad03); <br>
+
+                        //Obtiene Menor <br>
+                        function obtieneMenor(num1, num2, num3) { <br>
+                        menor = num1; <br>
+                        nombre = nombre1; <br>
+
+                        if (num2 < menor) { menor=num2;<br>
+                            nombre=nombre2;<br>
+                            }<br>
+                            if (num3 < menor) {<br>
+                                menor=num3; <br>
+                                nombre=nombre3; <br>
+                                } <br>
+                                return console.log(`Nombre del menor: ${nombre} ${menor} años`); ; } </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question11.html" target="_blank">Se les dará un bono por
+                            antigüedad a los empleados de una tienda. Si
+                            tienen un
+                            año, se les dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5
+                            años. Para los que tengan más de 5, el bono será de $1000. Realice un algoritmo
+                            y represéntelo ,que permita determinar el bono que recibirá un trabajador</a></p>
+                    <p class="section__parrafo">
+                        // Código para ejercicio Nro 11 <br>
+                        var anoAntiguedad = parseInt(prompt('Introducir años de antiguedad')); <br>
+
+                        console.log(`Te corresponde como bono: ${obtieneBono(bono)} soles`); <br>
+
+
+                        //Obtiene Bono <br>
+                        function obtieneBono(num1) { <br>
+
+                        if (anoAntiguedad < 5) <br>
+                            num1=anoAntiguedad * 100;
+                            <br>else num1=5 * 100; <br>} </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question12.html" target="_blank">Un profesor tiene un salario
+                            inicial de $1500, y recibe un incremento de
+                            10 %
+                            anual
+                            durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido
+                            en cada uno de los 6 años? Realice el algoritmo y representan la solución,
+                            utilizando el ciclo apropiado </a></p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: ano=0, salario=1500, porc=0.10 <br>
+
+                        Mientras ano <= 6 <br>
+                            ano=ano+1 <br>
+                            salario=salario + (salario * porc) <br>
+                            Escribir ("Salario por año=", salario) <br>
+                            FinMientras<br>
+                            Fin
+                    </p>
+
+                </li>
+                <li class=" section__item">
+                    <p class="section__title"><a href="./question13.html" target="_blank">Realice un algoritmo para leer
+                            las calificaciones de N alumnos y determine
+                            el
+                            número de aprobados y reprobados</a></p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: aprobados=0, reprobados=0, resultado, estudiantes=0 <br>
+
+                        Mientras estudiantes <= 20 <br>
+                            estudiantes=estudiantes+1 <br>
+                            Escribir ("Ingrese nota") <br>
+                            Leer resultado <br>
+
+                            Si resultado >10 <br>
+                            aprobados= aprobados +1 <br>
+
+                            Sino <br>
+                            reprobados= reprobados +1 <br>
+
+                            EndSi <br>
+                            FinMientras<br>
+
+                            Escribir ("Aprobados=", aprobados) <br>
+                            Escribir ("Desaprobados=", desaprobados) <br>
+                            Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question14.html" target="_blank">Una compañía, fabrica focos de
+                            colores (verdes, blancos y rojos). Se desea
+                            contabilizar, de un lote de N focos, el número de focos de cada color que hay en
+                            existencia</a></p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: verdes=0, blancos=0, rojos=0, color, focos=0 <br>
+
+                        Mientras focos <= 20 <br>
+                            focos=focos+1 <br>
+                            Escribir ("Ingrese color") <br>
+                            Leer color <br>
+
+                            Si color = "verde" <br>
+                            verdes= verdes + 1 <br>
+                            EndSi <br>
+
+                            Si color = "blanco" <br>
+                            blancos= blancos + 1 <br>
+                            EndSi <br>
+
+                            Si color = "rojo" <br>
+                            rojos= rojos + 1 <br>
+                            EndSi <br>
+
+
+                            FinMientras<br>
+
+                            Escribir ("Verdes=", verdes) <br>
+                            Escribir ("Rojos=", rojos) <br>
+                            Escribir ("Blancos=", blancos) <br>
+                            Fin
+                    </p>
+                </li>
+                <li class="section__item">
+                    <p class="section__title"><a href="./question15.html" target="_blank">Realice un algoritmo para
+                            determinar si una persona puede votar con base
+                            en
+                            su edad en las próximas elecciones</a></p>
+                    <p class="section__parrafo">Inicio <br>
+                        Variables: vota="NO", edad <br>
+
+                        Escribir ("Ingrese edad") <br>
+                        Leer edad <br>
+
+                        Si edad <= 65 <br>
+                            vota="SI" <br>
+                            EndSi <br>
+
+                            Escribir ("¿Puede votar?", vota) <br>
+
+                            Fin
+                    </p>
+                </li>
+            </ol>
+
+
+
+        </section>
+    </div>
+
+</body>
+
+
+</html>
